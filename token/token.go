@@ -33,6 +33,10 @@ const (
 	LT = "<"
 	// GT Operator
 	GT = ">"
+	// EQ Operator
+	EQ = "=="
+	// NOT_EQ Operator
+	NOT_EQ = "!="
 
 	// ********************* DELIMITERS ************************
 

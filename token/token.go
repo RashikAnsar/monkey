@@ -55,11 +55,26 @@ const (
 	FUNCTION = "FUNCTION"
 	// LET Keyword
 	LET = "LET"
+	// TRUE Keyword
+	TRUE = "TRUE"
+	// FALSE Keyword
+	FALSE = "FALSE"
+	// IF Keyword
+	IF = "IF"
+	// ELSE Keyword
+	ELSE = "ELSE"
+	// RETURN Keyword
+	RETURN = "RETURN"
 )
 
 var keywords = map[string]TokenType{
-	"fn":  FUNCTION,
-	"let": LET,
+	"fn":     FUNCTION,
+	"let":    LET,
+	"true":   TRUE,
+	"false":  FALSE,
+	"if":     IF,
+	"else":   ELSE,
+	"return": RETURN,
 }
 
 // Token contains Type and Description

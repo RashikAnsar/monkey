@@ -15,10 +15,26 @@ const (
 	// INT literals
 	INT = "INT" // 1343456
 
-	// ASSIGN Operators
+	// ********************** OPERATORS ***********************
+
+	// ASSIGN Operator
 	ASSIGN = "="
-	// PLUS Operators
+	// PLUS Operator
 	PLUS = "+"
+	// MINUS Operator
+	MINUS = "-"
+	// BANG Operator
+	BANG = "!"
+	// ASTERISK Operator
+	ASTERISK = "*"
+	// SLASH Operator
+	SLASH = "/"
+	// LT Operator
+	LT = "<"
+	// GT Operator
+	GT = ">"
+
+	// ********************* DELIMITERS ************************
 
 	// COMMA Delimiters
 	COMMA = ","
@@ -32,6 +48,8 @@ const (
 	LBRACE = "{"
 	// RBRACE Delimiters
 	RBRACE = "}"
+
+	// ******************** KEYWORDS ****************************
 
 	// FUNCTION Keyword
 	FUNCTION = "FUNCTION"

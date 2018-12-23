@@ -34,6 +34,15 @@ type ReturnStatement struct {
 	ReturnValue Expression
 }
 
+type IntegerLiteral struct {
+	Token token.Token
+	Value int64
+}
+
+func (il *IntegerLiteral) expressionNode()      {}
+func (il *IntegerLiteral) TokenLiteral() string { return il.Token.Literal }
+func (il *IntegerLiteral) String() string       { return il.Token.Literal }
+
 // TokenLiteral return the literal value of the token its associated with
 func (p *Program) TokenLiteral() string {
 	if len(p.Statements) > 0 {

@@ -24,6 +24,12 @@ type Program struct {
 	Statements []Statement
 }
 
+// ReturnStatement ast structure of return statement
+type ReturnStatement struct {
+	Token       token.Token
+	ReturnValue Expression
+}
+
 // TokenLiteral return the literal value of the token its associated with
 func (p *Program) TokenLiteral() string {
 	if len(p.Statements) > 0 {
@@ -50,3 +56,6 @@ type Identifier struct {
 
 func (i *Identifier) expressionNode()      {}
 func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
+
+func (rs *ReturnStatement) statementNode()       {}
+func (rs *ReturnStatement) TokenLiteral() string { return rs.Token.Literal }

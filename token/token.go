@@ -70,8 +70,12 @@ const (
 	// RETURN Keyword
 	RETURN = "RETURN"
 
+	// ******************** CUSTOM ****************************
+
 	// STRING Keyword
-	STRING = "STRING"
+	STRING   = "STRING"
+	LBRACKET = "["
+	RBRACKET = "]"
 )
 
 var keywords = map[string]TokenType{

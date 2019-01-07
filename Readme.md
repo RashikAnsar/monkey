@@ -1,6 +1,6 @@
 # Monkey Programming Language
 
-- This repo is created while learning to build and understand how interpreters and compilers work using **[Thorsten Ball](https://thorstenball.com/)** books.
+- This repo has been created while learning to build and understand how interpreters and compilers work using **[Thorsten Ball](https://thorstenball.com/)** books.
 
 ### Resources
 

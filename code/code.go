@@ -16,6 +16,7 @@ const (
 	// OpConstant to retrieves  the constant using the operand
 	OpConstant Opcode = iota
 	OpAdd
+	OpPop
 )
 
 // Definition for an Opcode
@@ -27,6 +28,7 @@ type Definition struct {
 var definitions = map[Opcode]*Definition{
 	OpConstant: {"OpConstant", []int{2}},
 	OpAdd:      {"OpAdd", []int{}},
+	OpPop:      {"OpPop", []int{}},
 }
 
 // Lookup the definition
